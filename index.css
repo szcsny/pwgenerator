@@ -1,0 +1,188 @@
+:root {
+    --emphasis-color: #10B981;
+    --button-color: #10B981;
+    --background-color: #1F2937;
+    --text-color: #D5D4D8;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    max-width: 550px;
+    height: 550px;
+    font-family: 'Karla', sans-serif;
+}
+
+.top {
+    color: var(--text-color);
+    padding: 80px 50px 30px 50px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 2000;
+    font-size: 40px;
+}
+
+.slogan {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.emphasis {
+    color: var(--emphasis-color);
+}
+
+.generate {
+    background: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.icon{
+    margin: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.pwlength {
+    text-align: center;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.radio {
+    font-size: 20px;
+}
+
+.radioflex {
+    margin: 10px;
+}
+
+.passwordflex {
+    display: flex;
+}
+
+input[type="radio"]{
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background: var(--button-color);
+}
+
+.line {
+    height: 0;
+    width: 400px;
+    border: 1px solid #2F3E53;
+    margin: 0 auto;
+}
+
+.bottom {
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+
+.password {
+    background: #273549;
+    color: var(--emphasis-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 180px;
+    margin: 0px 10px;
+    padding: 14px;
+    text-align: center;
+}
+
+.password:hover {
+    background: #2F3E53;
+}
+
+.instruction {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.modes {
+    position: absolute;
+    left: 365px;
+}
+
+.modes button {
+    width: 60px;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.colors {
+    position: absolute;
+    left: 365px;
+    top: 50px;
+}
+.color {
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+#light {
+    background: #ECFDF5;
+    border: 1px #273549 solid;
+    border-radius: 5px;
+    color: #273549
+}
+
+#dark {
+    background: #273549;
+    border: 1px #ECFDF5 solid;
+    border-radius: 5px;
+    color: #ECFDF5;
+}
+
+#red {
+    background: #E11D48;
+    color: #E11D48;
+}
+#cyan {
+    background: #0EA5E9;
+    color: #0EA5E9;
+}
+#yellow {
+    background: #F59E0B;
+    color: #F59E0B;
+}
+#purple {
+    background: #7C3AED;
+    color: #7C3AED;
+}
+#green {
+    background: #10B981;
+    color: #10B981;
+}
