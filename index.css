@@ -6,7 +6,7 @@
 }
 
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: var(--background-color);
     max-width: 550px;
