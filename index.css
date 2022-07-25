@@ -127,9 +127,10 @@ input[type="radio"]:checked {
     margin: 20px 0;
 }
 
-.modes {
+.modifiers {
     position: absolute;
-    left: 365px;
+    right: 10%;
+    top: 10px;
 }
 
 .modes button {
@@ -139,11 +140,6 @@ input[type="radio"]:checked {
     margin: 20px 0;
 }
 
-.colors {
-    position: absolute;
-    left: 365px;
-    top: 50px;
-}
 .color {
     height: 15px;
     width: 15px;
