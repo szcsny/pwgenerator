@@ -10,16 +10,18 @@
         <script src="index.js"></script>
     </head>
     <body>
-        <div class="modes">
-            <button onclick="setMode(this.id)" id="light">LIGHT</button>
-            <button onclick="setMode(this.id)" id="dark">DARK</button>
-        </div>
-        <div class="colors">
-            <button onclick="setColor(this.id)" id="purple" class="color"></button>
-            <button onclick="setColor(this.id)" id="cyan" class="color"></button>
-            <button onclick="setColor(this.id)" id="green" class="color"></button>
-            <button onclick="setColor(this.id)" id="yellow" class="color"></button>
-            <button onclick="setColor(this.id)" id="red" class="color"></button>
+        <div class="modifiers">
+            <div class="modes">
+                <button onclick="setMode(this.id)" id="light">LIGHT</button>
+                <button onclick="setMode(this.id)" id="dark">DARK</button>
+            </div>
+            <div class="colors">
+                <button onclick="setColor(this.id)" id="purple" class="color"></button>
+                <button onclick="setColor(this.id)" id="cyan" class="color"></button>
+                <button onclick="setColor(this.id)" id="green" class="color"></button>
+                <button onclick="setColor(this.id)" id="yellow" class="color"></button>
+                <button onclick="setColor(this.id)" id="red" class="color"></button>
+            </div>
         </div>
         <div class="top">
             <h1>Generate a <br><span id="emp" class="emphasis">random password</span></h1>
