@@ -10,58 +10,60 @@
         <script src="index.js"></script>
     </head>
     <body>
-        <div class="modifiers">
-            <div class="modes">
-                <button onclick="setMode(this.id)" id="light">LIGHT</button>
-                <button onclick="setMode(this.id)" id="dark">DARK</button>
-            </div>
-            <div class="colors">
-                <button onclick="setColor(this.id)" id="purple" class="color"></button>
-                <button onclick="setColor(this.id)" id="cyan" class="color"></button>
-                <button onclick="setColor(this.id)" id="green" class="color"></button>
-                <button onclick="setColor(this.id)" id="yellow" class="color"></button>
-                <button onclick="setColor(this.id)" id="red" class="color"></button>
-            </div>
-        </div>
-        <div class="top">
-            <h1>Generate a <br><span id="emp" class="emphasis">random password</span></h1>
-            <p class="slogan">Never use an insecure password again.</p>
-            <div class="passwordflex">
-                <div>
-                    <button class="generate" onclick="generate()">
-                        <img class="icon" src="Icon.png">
-                        Generate passwords
-                    </button>
+        <div class="wrapper">
+            <div class="modifiers">
+                <div class="modes">
+                    <button onclick="setMode(this.id)" id="light">LIGHT</button>
+                    <button onclick="setMode(this.id)" id="dark">DARK</button>
                 </div>
-                <div class="pwlength">
-                    <p>Password Length:</p>
-                    <form id="pwlength" class="radio">
-                        <div class"radioflex">
-                            <label id="pw10-el" for="10">10</label>
-                            <input name="pwlength" type="radio" id="10" value=10 checked>
-                            <label id="pw12-el" for="12">12</label>
-                            <input name="pwlength" type="radio" id="12" value=12>
-                        </div>
-                        <div class="radioflex">
-                            <label id="pw14-el" for="14">14</label>
-                            <input name="pwlength" type="radio" id="14" value=14>
-                            <label id="pw16-el" for="16">16</label>
-                            <input name="pwlength" type="radio" id="16" value=16>
-                        </div>
-                    </form>
+                <div class="colors">
+                    <button onclick="setColor(this.id)" id="purple" class="color"></button>
+                    <button onclick="setColor(this.id)" id="cyan" class="color"></button>
+                    <button onclick="setColor(this.id)" id="green" class="color"></button>
+                    <button onclick="setColor(this.id)" id="yellow" class="color"></button>
+                    <button onclick="setColor(this.id)" id="red" class="color"></button>
                 </div>
             </div>
-        </div>
-        <p class="line"></p>
-        <p class="instruction">Click on a password to copy to clipboard</p>
-        <div class="bottom">
-            <div class="flex">
-                <button onclick="copyValue(this.id)" class="password" id="p1-el">...</button>
-                <button onclick="copyValue(this.id)" class="password" id="p2-el">...</button>
+            <div class="top">
+                <h1>Generate a <br><span id="emp" class="emphasis">random password</span></h1>
+                <p class="slogan">Never use an insecure password again.</p>
+                <div class="passwordflex">
+                    <div>
+                        <button class="generate" onclick="generate()">
+                            <img class="icon" src="Icon.png">
+                            Generate passwords
+                        </button>
+                    </div>
+                    <div class="pwlength">
+                        <p>Password Length:</p>
+                        <form id="pwlength" class="radio">
+                            <div class"radioflex">
+                                <label id="pw10-el" for="10">10</label>
+                                <input name="pwlength" type="radio" id="10" value=10 checked>
+                                <label id="pw12-el" for="12">12</label>
+                                <input name="pwlength" type="radio" id="12" value=12>
+                            </div>
+                            <div class="radioflex">
+                                <label id="pw14-el" for="14">14</label>
+                                <input name="pwlength" type="radio" id="14" value=14>
+                                <label id="pw16-el" for="16">16</label>
+                                <input name="pwlength" type="radio" id="16" value=16>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-                <button onclick="copyValue(this.id)" class="password" id="p3-el">...</button>
-                <button onclick="copyValue(this.id)" class="password" id="p4-el">...</button>
+            <p class="line"></p>
+            <p class="instruction">Click on a password to copy to clipboard</p>
+            <div class="bottom">
+                <div class="flex">
+                    <button onclick="copyValue(this.id)" class="password" id="p1-el">...</button>
+                    <button onclick="copyValue(this.id)" class="password" id="p2-el">...</button>
+                </div>
+                <div class="flex">
+                    <button onclick="copyValue(this.id)" class="password" id="p3-el">...</button>
+                    <button onclick="copyValue(this.id)" class="password" id="p4-el">...</button>
+                </div>
             </div>
         </div>
         <script src="index.pack.js"></script>

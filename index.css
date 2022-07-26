@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --emphasis-color: #10B981;
     --button-color: #10B981;
@@ -6,23 +10,25 @@
 }
 
 html, body {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
     background: var(--background-color);
-    max-width: 550px;
-    height: 550px;
     font-family: 'Karla', sans-serif;
-}
-
-.top {
-    color: var(--text-color);
-    padding: 80px 50px 30px 50px;
 }
 
 h1 {
     margin: 0;
     font-weight: 2000;
     font-size: 40px;
+}
+
+.wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.top {
+    color: var(--text-color);
+    padding: 40px 50px 30px 50px;
 }
 
 .slogan {
@@ -43,7 +49,14 @@ h1 {
     letter-spacing: 1px;
     vertical-align: middle;
     margin-top: 50px;
+    opacity: .9;
 }
+
+.generate:hover,
+.generate:focus {
+    opacity: 1;
+}
+
 
 .icon{
     margin: auto;
@@ -70,6 +83,17 @@ h1 {
     display: flex;
 }
 
+button {
+    cursor: pointer;
+    border: 1px transparent solid;
+}
+
+button:hover,
+button:focus {
+    border: 1px white solid;
+    offset: 2px;
+}
+
 input[type="radio"]{
     -webkit-appearance: none;
     margin: 0;
@@ -77,6 +101,7 @@ input[type="radio"]{
     height: 20px;
     border: 2px solid var(--text-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 input[type="radio"]:checked {
@@ -128,9 +153,7 @@ input[type="radio"]:checked {
 }
 
 .modifiers {
-    position: absolute;
-    right: 10%;
-    top: 10px;
+    text-align: right;
 }
 
 .modes button {
